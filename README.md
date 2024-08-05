@@ -20,6 +20,15 @@ This repository contains implementations of various machine learning and deep le
   - BatchNorm
   - LSTM 
   - Bilstm
+  - LayerNorm
+  - To be updated...
+
+- **CV Algorithms** (located in the `CV` folder):
+  - NMS
+  - To be updated...
+
+- **NLP Algorithms** (located in the `NLP` folder):
+  - N-gram
   - To be updated...
 
 ## Usage
