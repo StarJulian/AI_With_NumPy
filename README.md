@@ -31,6 +31,10 @@ This repository contains implementations of various machine learning and deep le
   - N-gram
   - To be updated...
 
+- **AIGC Algorithms** (located in the `AIGC` folder):
+  - MultiHeadAttention
+  - To be updated...
+
 ## Usage
 
 To use the implementations in this repository, follow these steps:
