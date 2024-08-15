@@ -33,6 +33,7 @@ This repository contains implementations of various machine learning and deep le
 
 - **AIGC Algorithms** (located in the `AIGC` folder):
   - MultiHeadAttention
+  - CasualAttention
   - To be updated...
 
 ## Usage
