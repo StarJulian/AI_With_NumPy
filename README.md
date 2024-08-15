@@ -1,4 +1,5 @@
-# Machine Learning and Deep Learning Algorithms with NumPy
+- [English](README.md) | [中文](README-zh.md)
+# AI_With_NumPy
 
 This repository contains implementations of various machine learning and deep learning algorithms using NumPy. Unlike typical implementations that rely on library APIs, the focus here is on understanding the basic principles and implementations of algorithms. At the moment, training aspects are not covered, and the code may not be necessarily rigorous or efficient; it is intended solely for learning and reference purposes.
 
@@ -42,7 +43,7 @@ To use the implementations in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/StarJulian/Machine_DLearning_With_NP.git
+   git clone https://github.com/StarJulian/AI_With_NumPy.git
    ```
 
 2. Navigate to the directory containing the desired algorithm implementation.
