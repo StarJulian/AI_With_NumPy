@@ -1,4 +1,4 @@
-# AI_From_Scratch
+# AI_With_NumPy
 
 <div align="center">
 
