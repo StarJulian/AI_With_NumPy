@@ -62,8 +62,7 @@ class AdaBoost(Model):
                 criterion='gini',
                 max_depth=1 if self.base_estimator == 'stump' else 3,
                 min_samples_split=2,
-                random_state=self.random_state + i if self.random_state else None,
-                verbose=False
+                random_state=self.random_state + i if self.random_state else None
             )
             estimator.fit(X, y)
             
@@ -89,7 +88,13 @@ class AdaBoost(Model):
             self.estimator_errors.append(error)
             
             if (i + 1) % 10 == 0:
-                train_acc = self.score(X, y)
+                # 手动计算准确率
+                weighted_votes = np.zeros((n_samples, 2))
+                for j, (est, w) in enumerate(zip(self.estimators, self.estimator_weights)):
+                    preds = est.predict(X)
+                    weighted_votes[:, 0] += w * (preds == 0)
+                    weighted_votes[:, 1] += w * (preds == 1)
+                train_acc = np.mean((weighted_votes[:, 1] > weighted_votes[:, 0]).astype(int) == y)
                 print(f"  训练了 {i + 1} 个分类器, 当前准确率: {train_acc:.4f}")
         
         self.is_fitted = True
